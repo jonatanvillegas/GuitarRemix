@@ -1,0 +1,20 @@
+.curso{
+    padding: 2.5rem 0;
+    margin-top: 2.5rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+@media (min-width: 768px){
+    .curso-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.curso .text{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+}

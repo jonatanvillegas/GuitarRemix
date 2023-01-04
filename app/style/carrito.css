@@ -1,0 +1,67 @@
+.contenido{
+    display: grid;
+    align-items: flex-start;
+    gap: 5rem;
+}
+@media (min-width: 768px) {
+    .contenido{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+.producto{
+    display: grid;
+    grid-template-columns:  1fr 3fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid #c6c6c6;
+    position: relative;
+}
+.producto p{
+    margin:  0 0 1rem 0;
+}
+.select{
+    all: unset;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    display: block;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.producto span{
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+.nombre{
+    font-weight: 700;
+    font-size: 2.2rem ;
+}
+.precio{
+    font-weight: 700;
+    color: var(--primary);
+}
+.subtotal{
+    color: var(--primary);
+    font-size: 2.2rem ; 
+}
+.producto:last-of-type{
+    border-bottom: none;
+}
+.btn-eliminar{
+    all: unset;
+    top: 3rem;
+    right: 1rem;
+    position: absolute;
+}
+.btn-eliminar:hover{
+    cursor: pointer;
+}
+.carrito{
+    padding: 3rem;
+}
+.resumen{
+    background-color: #f9fafb;
+    border-radius: 5rem;
+    position: sticky;
+    margin-top: 5rem;
+}
